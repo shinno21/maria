@@ -1,15 +1,18 @@
 # -*- coding: utf-8 -*-
 from django.db import models
+import choices
 
 class Court(models.Model):
     """
     コートマスタ
     """
     name = models.CharField(u"コート名称", max_length=100)
-    url = models.CharField(u"コートURL", max_length=300)
+    url = models.CharField(u"コートURL", max_length=300, null=True)
 
     def __unicode__(self):
         return self.name
+
+
 
 
 class Schedule(models.Model):
@@ -23,9 +26,14 @@ class Schedule(models.Model):
     court_other = models.CharField(u"その他コート", max_length=100, null=True)
     court_other_url = models.CharField(u"その他コート", max_length=300, null=True)
     party_flg = models.BooleanField(u"飲み会有無")
+    status = models.CharField(u"状態", max_length=1, choices=choices.STATUS_CHOICES)
+    game_type = models.CharField(u"ゲーム種別", max_length=1, choices=choices.GAME_TYPE)
 
     def __unicode__(self):
-        return str(self.event_date).format("MM/DD")
+        return self.event_date.strftime("%m/%d(%a.)")
+
+    def get_schedule_display(self):
+        self.event_date.strftime("%m/%d(%a.)")
 
 
 class Visitor(models.Model):
@@ -57,7 +65,7 @@ class Member(models.Model):
         return self.name
 
 
-class NumberOfParticipants(models.Model):
+class Participants(models.Model):
     """
     自チーム参加者
     """
