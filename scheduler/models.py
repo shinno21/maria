@@ -12,7 +12,8 @@ class Court(models.Model):
     def __unicode__(self):
         return self.name
 
-
+    class Meta:
+        ordering = ["name"]
 
 
 class Schedule(models.Model):
@@ -24,16 +25,17 @@ class Schedule(models.Model):
     end_time = models.TimeField(u"終了時間")
     court_id = models.OneToOneField(Court, verbose_name=u"コートID")
     court_other = models.CharField(u"その他コート", max_length=100, null=True)
-    court_other_url = models.CharField(u"その他コート", max_length=300, null=True)
+    court_other_url = models.CharField(u"その他コートURL", max_length=300, null=True)
     party_flg = models.BooleanField(u"飲み会有無")
     status = models.CharField(u"状態", max_length=1, choices=choices.STATUS_CHOICES)
     game_type = models.CharField(u"ゲーム種別", max_length=1, choices=choices.GAME_TYPE)
 
     def __unicode__(self):
-        return self.event_date.strftime("%m/%d(%a.)")
+        return self.event_date.strftime("%m/%d(%a.)") + " " \
+               + self.start_time.strftime("%H:%M") + "-" + self.end_time.strftime("%H:%M")
 
-    def get_schedule_display(self):
-        self.event_date.strftime("%m/%d(%a.)")
+    class Meta:
+        ordering = ['event_date', 'start_time', 'end_time']
 
 
 class Visitor(models.Model):
@@ -45,6 +47,9 @@ class Visitor(models.Model):
     def __unicode__(self):
         return self.name
 
+    class Meta:
+        ordering = ['name']
+
 
 class VisitorSchedule(models.Model):
     """
@@ -53,6 +58,10 @@ class VisitorSchedule(models.Model):
     schedule_id = models.ForeignKey(Schedule, verbose_name=u"スケジュールID")
     visitor_id = models.ForeignKey(Visitor, verbose_name=u"相手チームID")
     number = models.IntegerField(u"参加人数")
+    note = models.CharField(u"備考", max_length=100)
+
+    class Meta:
+        ordering = ['schedule_id', 'visitor_id']
 
 
 class Member(models.Model):
@@ -65,10 +74,19 @@ class Member(models.Model):
         return self.name
 
 
+    class Meta:
+        ordering = ['name']
+
+
+
 class Participants(models.Model):
     """
     自チーム参加者
     """
     schedule_id = models.ForeignKey(Schedule, verbose_name=u"スケジュールID")
     member_id = models.ForeignKey(Member, verbose_name=u"メンバー")
+
+
+    class Meta:
+        ordering = ['schedule_id', 'member_id']
 
