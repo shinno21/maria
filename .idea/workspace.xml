@@ -2,13 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a03fc32-ba78-481d-ac00-d6168dadb743" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/bootstrap.less" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/template/scheduler/sample_schedule_list.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scheduler/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scheduler/models.py" afterPath="$PROJECT_DIR$/scheduler/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/scheduler/schedule_list.html" afterPath="$PROJECT_DIR$/template/scheduler/schedule_list.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maria/settings.py" afterPath="$PROJECT_DIR$/maria/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/maria/urls.py" afterPath="$PROJECT_DIR$/maria/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scheduler/views.py" afterPath="$PROJECT_DIR$/scheduler/views.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/template/scheduler/less/bootstrap.less" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/css/bootstrap-theme.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/css/bootstrap-theme.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/css/bootstrap.css" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/css/bootstrap.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/css/style.css" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/css/style.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/img/apple-touch-icon-114-precomposed.png" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/img/apple-touch-icon-114-precomposed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/img/apple-touch-icon-144-precomposed.png" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/img/apple-touch-icon-144-precomposed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/img/apple-touch-icon-57-precomposed.png" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/img/apple-touch-icon-57-precomposed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/img/apple-touch-icon-72-precomposed.png" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/img/apple-touch-icon-72-precomposed.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/img/favicon.png" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/img/favicon.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/img/glyphicons-halflings-white.png" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/img/glyphicons-halflings-white.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/img/glyphicons-halflings.png" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/img/glyphicons-halflings.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/js/bootstrap.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/js/html5shiv.js" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/js/html5shiv.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/js/jquery.min.js" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/js/jquery.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/js/less-1.3.3.min.js" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/js/less-1.3.3.min.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/js/scripts.js" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/js/scripts.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/alerts.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/alerts.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/badges.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/badges.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/breadcrumbs.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/breadcrumbs.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/button-groups.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/button-groups.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/buttons.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/buttons.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/carousel.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/carousel.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/close.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/close.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/code.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/code.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/component-animations.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/component-animations.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/dropdowns.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/dropdowns.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/forms.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/forms.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/glyphicons.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/glyphicons.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/grid.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/grid.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/input-groups.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/input-groups.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/jumbotron.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/jumbotron.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/labels.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/labels.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/list-group.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/list-group.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/media.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/media.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/mixins.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/mixins.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/modals.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/modals.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/navbar.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/navbar.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/navs.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/navs.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/normalize.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/normalize.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/pager.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/pager.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/pagination.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/pagination.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/panels.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/panels.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/popovers.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/popovers.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/print.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/print.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/progress-bars.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/progress-bars.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/responsive-utilities.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/responsive-utilities.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/scaffolding.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/scaffolding.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/tables.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/tables.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/theme.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/theme.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/thumbnails.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/thumbnails.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/tooltip.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/tooltip.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/type.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/type.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/utilities.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/utilities.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/variables.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/variables.less" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/template/scheduler/less/wells.less" afterPath="$PROJECT_DIR$/scheduler/static/scheduler/less/wells.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="maria.iws" />
@@ -35,8 +91,8 @@
       <file leaf-file-name="schedule_list.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/template/scheduler/schedule_list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3305785" vertical-offset="570" max-vertical-offset="1215">
-              <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+            <state vertical-scroll-proportion="0.33975902" vertical-offset="69" max-vertical-offset="1215">
+              <caret line="14" column="42" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -47,9 +103,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1470">
               <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-              <folding>
-                <element signature="e#24#52#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -77,7 +131,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maria/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.5" vertical-offset="337" max-vertical-offset="1380">
+            <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1380">
               <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
               <folding />
             </state>
@@ -87,11 +141,9 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scheduler/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+            <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
               <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-              <folding>
-                <element signature="e#50#101#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,11 +151,9 @@
       <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scheduler/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
+            <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
               <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,11 +161,9 @@
       <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/maria/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="285">
               <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#51#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,7 +171,7 @@
       <file leaf-file-name="__init__.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///Library/Python/2.7/site-packages/django/conf/urls/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+            <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1035">
               <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
               <folding />
             </state>
@@ -159,7 +207,7 @@
     <option name="x" value="20" />
     <option name="y" value="22" />
     <option name="width" value="1400" />
-    <option name="height" value="820" />
+    <option name="height" value="817" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -187,7 +235,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,8 +253,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maria" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scheduler" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -224,6 +290,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/template/scheduler" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scheduler/static/scheduler" />
+      <recent name="$PROJECT_DIR$/scheduler/static" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.maria">
@@ -311,7 +381,27 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="maria" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
@@ -337,27 +427,7 @@
       <option name="USE_PARAM" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="maria" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -448,32 +518,36 @@
       <created>1408871858934</created>
       <updated>1408871858934</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="create models and a template">
+      <created>1408889107115</created>
+      <updated>1408889107115</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="22" width="1400" height="820" extended-state="0" />
+    <frame x="20" y="22" width="1400" height="817" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288948" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32756326" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275401" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -492,12 +566,85 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="create scheduler's model and admin" />
-    <option name="LAST_COMMIT_MESSAGE" value="create scheduler's model and admin" />
+    <MESSAGE value="create models and a template" />
+    <option name="LAST_COMMIT_MESSAGE" value="create models and a template" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/template/scheduler/schedule_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="570" max-vertical-offset="1215">
+          <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1470">
+          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/choices.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="330">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="525">
+          <caret line="28" column="32" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maria/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1380">
+          <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduler/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="120" max-vertical-offset="210">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/maria/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="285">
+          <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/django/conf/urls/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="600" max-vertical-offset="1035">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/template/scheduler/schedule_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="499" max-vertical-offset="1185">
@@ -506,7 +653,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/scheduler/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/scheduler/static/scheduler/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="82347" max-vertical-offset="105975">
           <caret line="5507" column="18" selection-start-line="5507" selection-start-column="18" selection-end-line="5507" selection-end-column="18" />
@@ -518,9 +665,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1080">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-          <folding>
-            <element signature="e#24#52#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -546,8 +691,8 @@
           <ID>Python</ID>
           <OriginalElement>#/Users/habashin/Documents/django/maria/scheduler/models.py</OriginalElement>
           <nodes>
-            <node x="0.0" y="170.0">scheduler.models.VisitorSchedule</node>
             <node x="899.0" y="170.0">Schedule</node>
+            <node x="0.0" y="170.0">scheduler.models.VisitorSchedule</node>
             <node x="1124.0" y="170.0">scheduler.models.Participants</node>
             <node x="470.0" y="170.0">scheduler.models.Member</node>
             <node x="565.75" y="80.0">django.db.models.base.Model</node>
@@ -603,6 +748,7 @@
             <node>scheduler.models.VisitorSchedule</node>
           </SelectedNodes>
           <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -614,7 +760,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/scheduler/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/scheduler/static/scheduler/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="82347" max-vertical-offset="105975">
           <caret line="5507" column="18" selection-start-line="5507" selection-start-column="18" selection-end-line="5507" selection-end-column="18" />
@@ -626,13 +772,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="285">
           <caret line="11" column="62" selection-start-line="11" selection-start-column="62" selection-end-line="11" selection-end-column="62" />
-          <folding>
-            <element signature="e#24#52#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/template/scheduler/css/bootstrap.css">
+    <entry file="file://$PROJECT_DIR$/scheduler/static/scheduler/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="82347" max-vertical-offset="105975">
           <caret line="5507" column="18" selection-start-line="5507" selection-start-column="18" selection-end-line="5507" selection-end-column="18" />
@@ -653,8 +797,8 @@
           <ID>Python</ID>
           <OriginalElement>#/Users/habashin/Documents/django/maria/scheduler/models.py</OriginalElement>
           <nodes>
-            <node x="0.0" y="170.0">scheduler.models.VisitorSchedule</node>
             <node x="899.0" y="170.0">Schedule</node>
+            <node x="0.0" y="170.0">scheduler.models.VisitorSchedule</node>
             <node x="1124.0" y="170.0">scheduler.models.Participants</node>
             <node x="470.0" y="170.0">scheduler.models.Member</node>
             <node x="565.75" y="80.0">django.db.models.base.Model</node>
@@ -710,6 +854,7 @@
             <node>scheduler.models.VisitorSchedule</node>
           </SelectedNodes>
           <Categories />
+          <SCOPE>All</SCOPE>
         </state>
       </provider>
     </entry>
@@ -741,9 +886,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
           <caret line="11" column="47" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -751,15 +894,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
           <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
-          <folding>
-            <element signature="e#50#101#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/maria/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.5" vertical-offset="337" max-vertical-offset="1380">
+        <state vertical-scroll-proportion="0.0" vertical-offset="337" max-vertical-offset="1380">
           <caret line="84" column="23" selection-start-line="84" selection-start-column="23" selection-end-line="84" selection-end-column="23" />
           <folding />
         </state>
@@ -769,9 +910,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="210">
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -787,16 +926,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1470">
           <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#52#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/template/scheduler/schedule_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3305785" vertical-offset="570" max-vertical-offset="1215">
-          <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+        <state vertical-scroll-proportion="0.33975902" vertical-offset="69" max-vertical-offset="1215">
+          <caret line="14" column="42" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="42" />
           <folding />
         </state>
       </provider>
