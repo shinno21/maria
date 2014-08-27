@@ -51,18 +51,26 @@
                        @{{ schedule.court.name }}
                    </h4>
                     <h4 class="list-group-item-heading">
-                        vs. 小田島チーム<span class="badge">7</span>  ,宮澤チーム<span class="badge">6</span>
+                        vs. {% for visitor_schedule in schedule.visitor_schedules %}
+                        {{ visitor_schedule.visitor.name }}<span class="badge">{{ visitor.number }}</span>  ,
+                        {% endfor %}
                     </h4>
                     <br>
 					<p class="list-group-item-text">
-						マリア<span class="badge">4</span> 野々部, 浜村, 多田, 羽場
+						マリア<span class="badge">{{ schedule.member_schedules.count }} </span>
+                        {% for member_schedule in schedule.member_schedules %}
+                        {{ member_schedule.member.name }}  ,
+                        {% endfor %}
 					</p>
                     <p class="list-group-item-text">
-                        助っ人<span class="badge">2</span>  三浦, 清水
+                        助っ人<span class="badge">{{ schedule.helper_schedules.count }} </span>
+                        {% for helper_schedule in schedule.helper_schedules %}
+                        {{ helper_schedule.name }}  ,
+                        {% endfor %}
                     </p>
                     <br>
                     <p class="list-group-item-text">
-                        終わったあと飲みましょう！
+                        {{ schedule.comment }}
                     </p>
 				</div>
 			</div>

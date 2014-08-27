@@ -1,18 +1,24 @@
 from django.contrib import admin
-from models import Schedule, Visitor, VisitorSchedule, Court, Member, MemberSchedule
+from models import Schedule, Visitor, VisitorSchedule, Court, Member, MemberSchedule, HelperSchedule
 
 
 class VisitorScheduleInline(admin.TabularInline):
     model = VisitorSchedule
-
+    extra = 2
 
 class MemberScheduleInline(admin.TabularInline):
     model = MemberSchedule
+    extra = 6
+
+
+class HelperScheduleInline(admin.TabularInline):
+    model = HelperSchedule
+    extra = 2
 
 
 class ScheduleAdmin(admin.ModelAdmin):
     inlines = [
-        VisitorScheduleInline, MemberScheduleInline,
+        VisitorScheduleInline, MemberScheduleInline, HelperScheduleInline,
     ]
 
 

@@ -1,8 +1,19 @@
 from django.shortcuts import render
-from models import Schedule
+from models import Schedule, VisitorSchedule, MemberSchedule, HelperSchedule
+
 
 def schedule_list(request):
-    schedule_list = Schedule.objects.all().select_related(depth=1)
-    return render(request, 'scheduler/schedule_list.html', {'schedule_list': schedule_list})
+    schedule_list = Schedule.objects.all().select_related()
 
+    for schedule in schedule_list:
+        visitor_schedules = VisitorSchedule.objects.filter(schedule_id=schedule.id).select_related()
+        schedule.visitor_schedules = visitor_schedules
+
+        member_schedules = MemberSchedule.objects.filter(schedule_id=schedule.id)
+        schedule.member_schedules = member_schedules
+
+        helper_schedules = HelperSchedule.objects.filter(schedule_id=schedule.id)
+        schedule.helper_schedules = helper_schedules
+
+    return render(request, 'scheduler/schedule_list.html', {'schedule_list': schedule_list})
 

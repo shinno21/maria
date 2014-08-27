@@ -2,19 +2,20 @@
 from django.db import models
 import choices
 
+
 class Court(models.Model):
     """
     コートマスタ
     """
     name = models.CharField(u"コート名称", max_length=100)
     url = models.CharField(u"コートURL", max_length=300, blank=True, null=True)
+    station = models.CharField(u"最寄り駅", max_length=100, blank=True, null=True)
 
     def __unicode__(self):
         return self.name
 
     class Meta:
         ordering = ["name"]
-
 
 
 class Visitor(models.Model):
@@ -25,7 +26,6 @@ class Visitor(models.Model):
 
     def __unicode__(self):
         return self.name
-
 
     class Meta:
         ordering = ['name']
@@ -39,7 +39,6 @@ class Member(models.Model):
 
     def __unicode__(self):
         return self.name
-
 
     class Meta:
         ordering = ['name']
@@ -58,6 +57,7 @@ class Schedule(models.Model):
     party_flg = models.BooleanField(u"飲み会有無")
     status = models.CharField(u"状態", max_length=1, choices=choices.STATUS_CHOICES, blank=True, null=True)
     game_type = models.CharField(u"ゲーム種別", max_length=1, choices=choices.GAME_TYPE, blank=True, null=True)
+    comment = models.CharField(u"コメント", max_length=200, blank=True, null=True)
 
     def __unicode__(self):
 
@@ -102,8 +102,19 @@ class MemberSchedule(models.Model):
     member = models.ForeignKey(Member, verbose_name=u"メンバー")
     notes = models.CharField(u"備考", max_length=100, blank=True, null=True)
 
-
     class Meta:
         unique_together = ['schedule', 'member']
         ordering = ['schedule', 'member']
 
+
+class HelperSchedule(models.Model):
+    """
+    助っ人
+    """
+    schedule = models.ForeignKey(Schedule, verbose_name=u"スケジュールID")
+    name = models.CharField(u"助っ人名", max_length=20)
+    notes = models.CharField(u"備考", max_length=100, blank=True, null=True)
+
+    class Meta:
+        unique_together = ['schedule', 'name']
+        ordering = ['schedule', 'name']
