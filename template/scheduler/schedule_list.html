@@ -37,38 +37,66 @@
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<div class="list-group">
-				 <a href="#" class="list-group-item active">Maria Futsal Club Schedule</a>
+				 <a href="#" class="list-group-item active"><h1>Maria Schedule</h1></a>
 				<div class="list-group-item">
 					schedule List
 				</div>
             <!--dynamic-->
             {% for schedule in schedule_list %}
             <div class="list-group">
-                      <a class="list-group-item active">{{ schedule }} &nbsp;&nbsp;<p class="btn btn-default btn-xs"><span class="glyphicon glyphicon-star"></span> 練習試合</p></a>
+                      <a class="list-group-item active"><h3 style="margin-top: 0px;">{{ schedule }} </h3>
+                          {% if schedule.status == "0" %}
+                            <p class="btn btn-default btn-xs"><span class="glyphicon glyphicon-minus"></span>
+                          {% elif schedule.status == "1" %}
+                            <p class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-pencil"></span>
+                          {% elif schedule.status == "2" %}
+                            <p class="btn btn-success btn-xs"><span class="glyphicon glyphicon-ok"></span>
+                          {% elif schedule.status == "3" %}
+                            <p class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span>
+                          {% endif %}
+                      {{ schedule.get_status_display }}</p>
+
+
+                          {% if schedule.game_type == "0" %}
+                            <p class="btn btn-default btn-xs"><span class="glyphicon glyphicon-stop"></span>
+                          {% elif schedule.game_type == "1" %}
+                            <p class="btn btn-primary btn-xs"><span class="glyphicon glyphicon-play"></span>
+                          {% elif schedule.game_type == "2" %}
+                            <p class="btn btn-success btn-xs"><span class="glyphicon glyphicon-star"></span>
+                          {% elif schedule.game_type == "3" %}
+                            <p class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-plus"></span>
+                          {% elif schedule.game_type == "9" %}
+                            <p class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-flag"></span>
+                          {% endif %}
+                      {{ schedule.get_game_type_display }}</p>
+                      
+                      </a>
                 </div>
 				<div class="list-group-item">
                    <h4 class="list-group-item-heading">
                        @{{ schedule.court.name }}
                    </h4>
-                    <h4 class="list-group-item-heading">
+                    <h5 class="list-group-item-heading" style="margin-bottom: 15px;">
                         vs. {% for visitor_schedule in schedule.visitor_schedules %}
-                        {{ visitor_schedule.visitor.name }}<span class="badge">{{ visitor.number }}</span>  ,
+                        {{ visitor_schedule.visitor.name }}<span class="badge">{{ visitor_schedule.number }}</span>  ,
                         {% endfor %}
-                    </h4>
-                    <br>
+                    </h5>
+
 					<p class="list-group-item-text">
-						マリア<span class="badge">{{ schedule.member_schedules.count }} </span>
+						<a href="#" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> マリア
+                            <span class="badge">{{ schedule.member_schedules.count }} </span></a>
+
                         {% for member_schedule in schedule.member_schedules %}
-                        {{ member_schedule.member.name }}  ,
+                        {{ member_schedule.member.last_name }}  ,
                         {% endfor %}
 					</p>
-                    <p class="list-group-item-text">
-                        助っ人<span class="badge">{{ schedule.helper_schedules.count }} </span>
+                    <p class="list-group-item-text" style="margin-bottom: 15px;">
+                        <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> 助っ人
+                            <span class="badge">{{ schedule.helper_schedules.count }} </span></a>
                         {% for helper_schedule in schedule.helper_schedules %}
                         {{ helper_schedule.name }}  ,
                         {% endfor %}
                     </p>
-                    <br>
                     <p class="list-group-item-text">
                         {{ schedule.comment }}
                     </p>

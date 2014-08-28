@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from django.db import models
+from django.contrib.auth.models import User
 import choices
 
 
@@ -31,17 +32,17 @@ class Visitor(models.Model):
         ordering = ['name']
 
 
-class Member(models.Model):
-    """
-    メンバー
-    """
-    name = models.CharField(u"名前", max_length=20)
+#class Member(models.Model):
+#    """
+#    メンバー
+#    """
+#    name = models.CharField(u"名前", max_length=20)
 
-    def __unicode__(self):
-        return self.name
+#    def __unicode__(self):
+#        return self.name
 
-    class Meta:
-        ordering = ['name']
+#    class Meta:
+#        ordering = ['name']
 
 
 class Schedule(models.Model):
@@ -99,7 +100,7 @@ class MemberSchedule(models.Model):
     自チーム参加者
     """
     schedule = models.ForeignKey(Schedule, verbose_name=u"スケジュールID")
-    member = models.ForeignKey(Member, verbose_name=u"メンバー")
+    member = models.ForeignKey(User, verbose_name=u"メンバー")
     notes = models.CharField(u"備考", max_length=100, blank=True, null=True)
 
     class Meta:

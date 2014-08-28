@@ -1,5 +1,5 @@
 from django.contrib import admin
-from models import Schedule, Visitor, VisitorSchedule, Court, Member, MemberSchedule, HelperSchedule
+from models import Schedule, Visitor, VisitorSchedule, Court, MemberSchedule, HelperSchedule
 
 
 class VisitorScheduleInline(admin.TabularInline):
@@ -30,11 +30,11 @@ class CourtAdmin(admin.ModelAdmin):
     pass
 
 
-class MemberAdmin(admin.ModelAdmin):
-    pass
+#class MemberAdmin(admin.ModelAdmin):
+#    pass
 
 
 admin.site.register(Schedule, ScheduleAdmin)
 admin.site.register(Visitor, VisitorAdmin)
 admin.site.register(Court, CourtAdmin)
-admin.site.register(Member, MemberAdmin)
+#admin.site.register(Member, MemberAdmin)
