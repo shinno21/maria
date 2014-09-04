@@ -47,7 +47,7 @@ class Visitor(models.Model):
 
 class Schedule(models.Model):
     """
-    スケジュールtest
+    スケジュール
     """
     event_date = models.DateField(u"開催日")
     start_time = models.TimeField(u"開始時間", blank=True, null=True)
