@@ -60,6 +60,7 @@ class Schedule(models.Model):
     game_type = models.CharField(u"ゲーム種別", max_length=1, choices=choices.GAME_TYPE, blank=True, null=True)
     comment = models.CharField(u"コメント", max_length=200, blank=True, null=True)
 
+
     def __unicode__(self):
 
         #todo 後でリファクタ必要そう
