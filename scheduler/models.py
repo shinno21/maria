@@ -43,7 +43,7 @@ class Visitor(models.Model):
 
 #    class Meta:
 #        ordering = ['name']
-
+# aaa
 
 class Schedule(models.Model):
     """
