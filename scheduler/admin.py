@@ -29,7 +29,7 @@ class VisitorAdmin(admin.ModelAdmin):
 class CourtAdmin(admin.ModelAdmin):
     pass
 
-
+# test
 #class MemberAdmin(admin.ModelAdmin):
 #    pass
 
